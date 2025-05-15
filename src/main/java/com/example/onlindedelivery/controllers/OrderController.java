@@ -23,7 +23,7 @@ public class OrderController {
     // Get all orders
     @GetMapping
     public ResponseEntity<List<Order>> getAll() {
-        try 
+        try {
             List<Order> orders = orderService.getAllOrders();
             return ResponseEntity.ok(orders);
         } catch (Exception e) {

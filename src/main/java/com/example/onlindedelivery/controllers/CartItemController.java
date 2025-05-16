@@ -39,7 +39,7 @@ public class CartItemController {
       return  service.create(item);
     }
 
-    // UPDATE ITEM
+    // UPDATE ITEM   
     @PutMapping("/{id}")
     public void update(@PathVariable String id, @RequestBody CartItem updatedItem) throws Exception {
         service.update(id, updatedItem);

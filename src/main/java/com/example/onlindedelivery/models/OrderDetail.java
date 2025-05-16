@@ -5,7 +5,7 @@ import java.util.Date;
 public class OrderDetail {
     private String orderId;
     private String userId;
-   
+    private Date orderDate;
 
     public OrderDetail() {
         this.orderDate = new Date(); // auto-set date
@@ -25,6 +25,10 @@ public class OrderDetail {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public Date getOrderDate() {
+        return orderDate;
     }
 
     public void setOrderDate(Date orderDate) {

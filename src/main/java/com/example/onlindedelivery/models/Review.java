@@ -10,6 +10,7 @@ public class Review {
     private String reviewText;
     private int rating; // 1 to 5
     private Date createdAt;
+    
 
     // Constructors
     public Review() {

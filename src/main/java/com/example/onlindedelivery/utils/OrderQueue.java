@@ -26,3 +26,13 @@ public class OrderQueue {
         return orderQueue.peek();
     }
 
+    // Check if queue is empty
+    public boolean isQueueEmpty() {
+        return orderQueue.isEmpty();
+    }
+
+    // Get all queued orders as a list
+    public List<Order> getAllQueuedOrders() {
+        return new ArrayList<>(orderQueue);
+    }
+}

@@ -9,7 +9,7 @@ public class CartItem extends CartItemDetail {
     public CartItem(String cartId, String userId, String foodItemId, int quantity) {
         super.setCartId(cartId);
         super.setUserId(userId);
-        this.foodItemId = foodItemId;
+        this.foodItemId = foodItemId;  
         this.quantity = quantity;
         
     }

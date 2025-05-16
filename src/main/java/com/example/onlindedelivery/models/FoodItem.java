@@ -18,6 +18,7 @@ public class FoodItem {
         this.description = description;
         this.price = price;
         this.image = image;
+        
     }
 
     // Getters and Setters

@@ -19,6 +19,7 @@ public class ReviewController {
     private ReviewService service;
 
     // GET ALL REVIEWS
+    
     @GetMapping
     public List<ReviewDTO> getAll() throws Exception {
         return service.getAllReviews();

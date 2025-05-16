@@ -13,7 +13,7 @@ import java.util.List;
 public class CartItemController {
 
     @Autowired
-    private CartItemService service;
+    private CartItemService service; 
 
     // GET ALL CART ITEMS
     @GetMapping

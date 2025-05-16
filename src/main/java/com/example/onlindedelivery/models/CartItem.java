@@ -11,6 +11,7 @@ public class CartItem extends CartItemDetail {
         super.setUserId(userId);
         this.foodItemId = foodItemId;
         this.quantity = quantity;
+        
     }
 
     public String getFoodItemId() {

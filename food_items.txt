@@ -1,0 +1,3 @@
+2ced459e-3435-4f2d-aa2d-b22ed3a7f2d8,Sushi Update,California Roll,20.0,https://pekis.net/sites/default/files/styles/wide/public/2025-02/nigiri.jpg?itok=s34-JKoE
+b45d4dde-327a-4d58-8406-7264614e9700,Update Test,asdas dad asdadasdadasda,2222.0,https://www.watermelon.org/wp-content/uploads/2023/02/Sandwich_2023.jpg
+e2ae3a23-5ad8-4c62-9ff1-b046f7e29a47,Shrimp Fried Rice,Amazing.........,3000.0,https://www.dinneratthezoo.com/wp-content/uploads/2019/05/shrimp-fried-rice-5-500x500.jpg

@@ -1,0 +1,9 @@
+U3,Alice Johnson,alice@example.com,securePass123,28,Female,789 Pine Rd
+2f5d0ddf-9edf-42cf-b3c7-60f1da78a61b,Update NAME,gimhan@gmail.com,null,25,Male,Update ADDRESS
+a4ff533d-76a1-4771-ba93-6e2a4b8b9f02,Kamal,kamal12@gmail.com,Kamal12,26,Male,no.781,kurunagala
+c3fc69b1-a4d8-4d4e-84bc-2a73f889fd69,Kamal,kamal127@gmail.com,Kamal12,26,Male,no.781,kurunagala
+2702d488-7210-4e32-9d9b-104af48d71b1,Malaka,malaka12@gmail.com,Malaka12,27,Male,no.980,maharagama
+c141f7d5-6a93-4ff6-8758-914824c3794e,Malaka,malaka12@gmail.com,Malaka12,27,Male,no.980,maharagama
+2af16061-c704-4100-a977-d7475ef72ba4,Pahan,pahan12@gmail.com,pahan12,30,Male,no.981,rathnapura
+4fda6d4b-71aa-45a1-be98-bdb75d0347f3,Terst,test@gmail.com,test@123,25,Male,asdadadadadadaasdadad
+232468e0-bc33-46ab-8f73-cdd38b3738ca,hi,hi12@gmail.com,hi12345,20,Male,rjyukililo;o;

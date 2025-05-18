@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class ReviewService {
+public class ReviewService extends BaseService {
 
     @Autowired
     private ReviewRepository repository;
@@ -28,16 +28,21 @@ public class ReviewService {
     }
 
     public ReviewDTO getReviewById(String id) throws Exception {
+        validateId(id);  // Using inherited method
         Review review = repository.findById(id);
         if (review == null) throw new RuntimeException("Review not found");
         return toDTO(review);
     }
 
     public void createReview(Review review) throws Exception {
+        validateRating(review.getRating());  // Using inherited method
+        review.setCreatedAt(getCurrentTimestamp());  // Using inherited method
         repository.save(review);
     }
 
     public void updateReview(String id, Review updatedReview) throws Exception {
+        validateId(id);  // Using inherited method
+        validateRating(updatedReview.getRating());  // Using inherited method
         updatedReview.setReviewId(id);
         repository.update(updatedReview);
     }

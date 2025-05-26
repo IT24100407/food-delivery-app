@@ -3,36 +3,72 @@ package com.example.onlindedelivery.utils;
 import com.example.onlindedelivery.models.Order;
 import org.springframework.context.annotation.Bean;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-
 public class OrderQueue {
-    private final Queue<Order> orderQueue = new LinkedList<>();
+    private Order[] queue;
+    private int front;
+    private int rear;
+    private int size;
+    private int capacity;
 
-    // Add an order to queue
-    public void enqueueOrder(Order order) {
-        orderQueue.add(order);
+    public OrderQueue(int capacity) {
+        this.capacity=capacity;
+        this.queue= new Order[capacity];
+        this.front=0;
+        this.rear=-1;
+        this.size=0;
+
+
     }
 
-    // Process and remove next order
-    public Order dequeueOrder() {
-        return orderQueue.poll();
+    public boolean enqueueOrder(Order order){
+        if(size==capacity) return false;    //check to queue is full
+        rear=(rear+1)% capacity;
+        queue[rear]= order;
+        size++;
+        return true;
+
+
+
     }
 
-    // Peek at next order without removing
-    public Order peekNextOrder() {
-        return orderQueue.peek();
+    public Order dequeueOrder(){
+        if(isQueueEmpty())return null;
+        Order order= queue[front];
+        front=(front+1)%capacity;
+        size--;
+        return order;
+
+
     }
 
-    // Check if queue is empty
-    public boolean isQueueEmpty() {
-        return orderQueue.isEmpty();
+    public Order peekNextOrder(){
+        if(isQueueEmpty()) return null;
+        return queue[front];
+
     }
 
-    // Get all queued orders as a list
-    public List<Order> getAllQueuedOrders() {
-        return new ArrayList<>(orderQueue);
+    public boolean isQueueEmpty(){
+        return size==0;
+
     }
+
+    public Order[] getAllQueuedOrders(){
+        Order[] result= new  Order[size];
+        for(int i=0; i< size; i++){
+            result[i]=queue[(front+i)% capacity];
+
+        }
+
+        return result;
+
+    }
+
+
+
+
+
+
+
+
 }
+
